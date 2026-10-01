@@ -74,7 +74,7 @@ mysqli_stmt_close($stmt);
                 <!-- Card Float Overlay di Bawah Gambar -->
                 <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-xl border border-white/40 shadow-lg max-w-xs">
                     <h4 class="font-bold text-slate-900 text-sm mb-1"><?php echo $row['product_name']; ?></h4>
-                    <p class="text-slate-500 text-xs leading-relaxed"><?php echo $row['description']; ?></p>
+                    
                 </div>
             </div>
 
@@ -100,7 +100,7 @@ mysqli_stmt_close($stmt);
                     <!-- Tombol Action Utama -->
                     <div class="flex items-center gap-3 mb-6">
                         <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-5 py-2.5 rounded-xl transition-colors">
-                            Lihat detail
+                            Checkout
                         </a>
                         <a href="#" class="border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-medium px-5 py-2.5 rounded-xl transition-colors">
                             Pesan teknisi
@@ -109,13 +109,13 @@ mysqli_stmt_close($stmt);
                 </div>
 
                 <!-- Bagian Bawah: Harga & Kategori -->
-                <div class="space-y-4 pt-2">
+                <div class="space-y-4">
                     <div class="flex items-center justify-between border-t border-slate-100 pt-4">
                         <span class="text-xl font-bold text-slate-900">
                             <?php echo $row['price']; ?>
                         </span>
                         <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-4 py-2 rounded-xl transition-colors">
-                            Lihat detail
+                            Checkout
                         </a>
                     </div>
                 </div>
