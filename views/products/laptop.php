@@ -99,6 +99,10 @@ mysqli_stmt_close($stmt);
 
                     <!-- Tombol Action Utama -->
                     <div class="flex items-center gap-3 mb-6">
+                        <a href="../../actions/cart.php?aksi=tambah&id=<?php echo $row['product_id']; ?>"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium px-5 py-2.5 rounded-xl">
+                            Tambah ke keranjang
+                        </a>
                         <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-5 py-2.5 rounded-xl transition-colors">
                             Checkout
                         </a>
@@ -117,17 +121,16 @@ mysqli_stmt_close($stmt);
                         <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-medium px-4 py-2 rounded-xl transition-colors">
                             Checkout
                         </a>
+                        <a href="../cart.php" class="border border-slate-300 text-slate-700 text-xs font-medium px-5 py-2.5 rounded-xl">
+                            Lihat keranjang
+                        </a>
                     </div>
                 </div>
 
             </div>
 
         </div>
-    </div>
-
-    <!-- Render Icon Lucide -->
-    <script>
-        lucide.createIcons();
-    </script>
-</body>
-</html>
+    <?php include __DIR__ . "/components/landing/footer.php"; ?>
+<?php
+mysqli_close($conn);
+?>

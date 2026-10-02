@@ -178,8 +178,13 @@ if(isset($_POST['hapus'])) {
                                         echo is_numeric($price) ? 'Rp ' . number_format($price, 0, ',', '.') : htmlspecialchars($price);
                                     ?>
                         </span>
-                        <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white text-xs px-4 py-2 rounded-lg transition-colors font-medium">
+                        <a href="./views/products/laptop.php?id=<?php echo $row['product_id']; ?>" class="bg-slate-900 text-white text-xs px-4 py-2 rounded-lg">
                             Lihat
+                        </a>
+
+                        <!-- TAMBAHAN: tombol keranjang -->
+                        <a href="./actions/cart.php?aksi=tambah&id=<?php echo $row['product_id']; ?>" class="bg-indigo-600 text-white text-xs px-2 py-2 rounded-lg">
+                            + Keranjang
                         </a>
                     </div>
                 </div>
@@ -187,5 +192,8 @@ if(isset($_POST['hapus'])) {
         </div>
     </div>
 
-
+    <?php include __DIR__ . "/components/landing/footer.php"; ?>
+<?php
+mysqli_close($conn);
+?>
 

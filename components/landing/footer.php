@@ -1,7 +1,9 @@
 </div>
 </main>
 
-<footer class="bg-white border-t border-gray-200 sm:ml-64">
+<script>lucide.createIcons();</script>
+
+<footer class="bg-white border-t border-gray-200 w-full">
   <div class="px-6 py-4 text-sm text-gray-500 text-center">
     &copy; <?= date('Y') ?> Dexter
   </div>

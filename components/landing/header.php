@@ -55,6 +55,12 @@
                 <i data-lucide="bell" class="w-4 h-4"></i>
             </button>
 
+            <a href="views/cart.php" class="relative">
+                <button class="w-9 h-9 bg-slate-100 hover:bg-slate-200/70 text-slate-600 rounded-xl flex items-center justify-center transition-colors">
+                    <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                </button>
+            </a>
+
             <!-- Icon Pengaturan -->
             <button class="w-9 h-9 bg-slate-100 hover:bg-slate-200/70 text-slate-600 rounded-xl flex items-center justify-center transition-colors">
                 <i data-lucide="settings" class="w-4 h-4"></i>
